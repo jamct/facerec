@@ -12,7 +12,7 @@ This software is released under the Apache 2.0 license.
 Build container: 
 
 ```bash
-docker build -t facerec:latest
+docker build -t facerec:latest .
 ```
 
 Run container:

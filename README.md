@@ -18,5 +18,5 @@ docker build -t facerec:latest .
 Run container:
 
 ```bash
-docker run -it --devive /dev/vchiq -v $PWD/beispiel.py:/face_recognition/examples/beispiel.py -v $PWD/bilder:/face_recognition/examples/bilder facerec bash
+docker run -it --device /dev/vchiq -v $PWD/beispiel.py:/face_recognition/examples/beispiel.py -v $PWD/bilder:/face_recognition/examples/bilder facerec bash
 ```

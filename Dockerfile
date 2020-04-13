@@ -25,8 +25,10 @@ RUN apt-get install -y --fix-missing \
     python3-dev \
     zip \
     && apt-get clean && rm -rf /tmp/* /var/tmp/*
-RUN python3 -m ensurepip --upgrade && pip3 install --upgrade picamera[array] dlib
 
+RUN pip install --upgrade pip
+
+RUN python3 -m ensurepip --upgrade && pip3 install --upgrade picamera[array] dlib
 
 RUN git clone --single-branch https://github.com/ageitgey/face_recognition.git
 RUN cd /face_recognition && \
